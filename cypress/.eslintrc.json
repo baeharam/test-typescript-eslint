@@ -1,0 +1,22 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "cypress"
+  },
+  "plugins": ["cypress", "mocha"],
+  "extends": [
+    "@spoqa/eslint-config-spoqa/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:cypress/recommended",
+    "plugin:mocha/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": "cypress"
+      }
+    }
+  }
+}

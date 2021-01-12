@@ -1,0 +1,7 @@
+build/
+node_modules/
+
+.git/
+public/env*.js
+craco.config.js
+env

@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint:cypress": "eslint --config ./cypress/.eslintrc.json --ignore-path ./cypress/.eslintignore --ext .js,.jsx,.ts,.tsx,.json ./cypress --cache --cache-location ./cypress/.eslintcache"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +40,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.5.0",
+    "@spoqa/eslint-config-spoqa": "^1.2.1",
+    "cypress": "^6.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-mocha": "^8.0.0",
+    "prettier": "^2.2.1"
   }
 }

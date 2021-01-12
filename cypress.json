@@ -1,0 +1,9 @@
+{
+  "viewportWidth": 360,
+  "viewportHeight": 720,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "cypress/reporter-config.json"
+  },
+  "testFiles": ["[a-zA-Z]*.spec.ts", "*/[a-zA-Z]*.spec.ts"]
+}

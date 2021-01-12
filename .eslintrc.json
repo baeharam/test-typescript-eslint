@@ -1,0 +1,21 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["testing-library"],
+  "extends": [
+    "@spoqa/eslint-config-spoqa/react",
+    "@spoqa/eslint-config-spoqa/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react",
+    "plugin:testing-library/react"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": "src"
+      }
+    }
+  }
+}
